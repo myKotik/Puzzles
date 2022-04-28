@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".Puzzles">
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        android:onClick="Back"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+    <LinearLayout
+        android:id="@+id/text_puzzles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round">
+        <TextView
+            android:id="@+id/puzzles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/answerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_puzzles"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Введите свой ответ сюда"
+        android:inputType="textShortMessage"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/answer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answerText"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:onClick="onClick"
+        android:text="Ответить"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+</RelativeLayout>

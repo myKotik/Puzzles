@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".FindCat">
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        android:onClick="Back"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/back">
+        <ImageView
+            android:id="@+id/picCat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="picCat"
+            android:src="@drawable/cat1" />
+        <Button
+            android:id="@+id/btnAnswer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@color/no"
+            android:onClick="findCatBtn" />
+    </FrameLayout>
+</RelativeLayout>
